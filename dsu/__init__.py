@@ -60,8 +60,6 @@ class Application:
         # Start the update process
         for obj in self.smother():
 
-            print(f"Smothered {obj}")
-
             # Terminate or upgrade the component/port
             if isinstance(obj, Port):
 

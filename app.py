@@ -11,7 +11,7 @@ class Producer(dsu.ActiveComponent):
         print(f"{self} started")
         try:
             while self.running:
-                target.put(random.randint(0,999))
+                target.put(random.randint(0,9))
         except:
             with open('producer.log', 'w') as f:
                 f.writelines(traceback.format_exc())
