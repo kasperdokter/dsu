@@ -1,3 +1,21 @@
+"""
+    This is a short demo on how to dynamically update a running system.
+    To run the demo, run:
+
+        python main.py
+
+    Go to app.py, and change Line 14 from 
+
+        target.put(random.randint(0,9))
+
+    to
+
+        target.put(random.randint(0,999))
+
+    The system automatically picks up the change.
+"""
+
+
 import os
 import time
 import importlib
